@@ -20,7 +20,7 @@ A step-by-step example that tells you how to make a development environment work
 You can manually install docker on your board. This container ready to run on linux/arm64 environments only.
 
 ```
-docker run -dit -e -v /etc/resolv.conf:/etc/resolv.conf SSID="Your SSID Network" -e PSK="Your pre-shared key" --privileged --network host ubyte/wlan:latest
+docker run -dit -v /etc/resolv.conf:/etc/resolv.conf -e SSID="Your SSID Network" -e PSK="Your pre-shared key" --privileged --network host ubyte/wlan:latest
 
 ```
 
